@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> BocoBoco consignes à raporter</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="store.js" async></script>
+    </head>
+
+    <body>
+        <header class="font-for-all">
+        <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <a href="https://www.bocoboco.ca/cart/"><img src="Images/panier.png" alt="panier" width="16" height="16">&nbsp;<li>x Articles - C$0.00</li></a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.bocoboco.ca/account/login/"><img src="Images/user.png" alt="user" width="14" height="14">
+                        <p>Mon compte S'inscrire </p>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <a href="https://www.bocoboco.ca/"><img src="Images/BocoBoco.png" alt="Smiley face" height="70" width="140"></a>
+        <p style="font-size:19px">Bonjour <font color="red">NOM DU CLIENT</font></p>
+        <br></br>
+        <p style="font-size:18px">Merci pour votre commande !</p>
+        <p style="font-size:14px">À ce jour, vous avez évité xx déchets grâce à la consigne BocoBoco (total consigne commandée).</p>
+        <p style="font-size:14px">Avant de finaliser votre achat, merci de renseigner le nombre de consigne que vous avez. <p>Le remboursement sera effectif dès maintenant.</p> <p>Lors de la livraison ou de la cueillette, nous vérifierons ces informations.</p>
+        <br></br>
+        <p></p>
+        <p style="text-decoration: underline;">À nos dossiers, vous avez <font color="red">XX</font> consignes:</p>
+             <p>-<font color="red"> X</font> Petit bocal</p>
+             <p>-<font color="red"> X</font> Bouteilles d’huiles</p>
+             <p>-<font color="red"> X</font> Grand boca</p>
+             <br></p>
+             <p style="text-decoration: underline;">Quel type de contenant prévoyez-vous nous retourner ?</p>
+
+
+        <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title"><font color="red">X</font> Petit bocal <span class="shop-item-price">2$</span></span>
+                    <img class="shop-item-image" src="Images/Contenant1.png">
+                    <div class="shop-item-details">
+                                <input type="button" value="-" id="moins" onclick="minus1()">
+                                &nbsp;
+                                <input type="text" size="2" value="0" id="cart-quantity-input">
+                                &nbsp;
+                                <button class="btn btn-primary shop-item-button" type="button" value="+" id="plus" onclick="plus1()">+</button>
+                    </div>
+                </div>
+
+                <div class="shop-item">
+                    <span class="shop-item-title"><font color="red">X</font> Bouteilles d’huiles <span class="shop-item-price"> 3$ </span></span>
+                    <img class="shop-item-image" src="Images/Contenant3.png">
+                    <div class="shop-item-details">
+                                <input type="button" value="-" id="moins" onclick="minus2()">
+                                &nbsp;
+                                <input type="text" size="2" value="0" id="count2">
+                                &nbsp;
+                                <button class="btn btn-primary shop-item-button" type="button" value="+" id="plus" onclick="plus2()">+</button>
+                    </div>
+                </div>
+
+                <div class="shop-item">
+                    <span class="shop-item-title"><font color="red">X</font> Grand bocal <span class="shop-item-price"> 2$ </span> </span>
+                    <img class="shop-item-image" src="Images/Contenant2.png">
+                    <div class="shop-item-details">
+                                <input type="button" value="-" id="moins" onclick="minus3()">
+                                &nbsp;
+                                <input type="text" size="2" value="0" id="count3">
+                                &nbsp;
+                                <button class="btn btn-primary shop-item-button" type="button" value="+" id="plus" onclick="plus3()">+</button>
+                    </div>
+                </div>
+        </div>
+
+
+        <section class="container content-section">
+            
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">Objet</span>
+                <span class="cart-price cart-header cart-column">Montant</span>
+                <span class="cart-quantity cart-header cart-column">Quantité</span>
+            </div>
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                <strong class="total_penier">Total de consignes en retour : </strong>
+                <span class="cart-total-price">0$</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">Valider</button>
+        </section>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <ul class="nav footer-nav">
+                </ul>
+            </div>
+        </footer>
+        </header>
+    </body>
+</html>
